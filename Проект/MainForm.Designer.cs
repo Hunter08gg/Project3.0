@@ -35,6 +35,7 @@
             buttonManageCategories = new Button();
             groupBox2 = new GroupBox();
             label13 = new Label();
+            label14 = new Label();
             label8 = new Label();
             comboBoxMonth = new ComboBox();
             label10 = new Label();
@@ -78,7 +79,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(0, 23);
+            label12.Location = new Point(7, 26);
             label12.Name = "label12";
             label12.Size = new Size(35, 15);
             label12.TabIndex = 8;
@@ -103,7 +104,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(164, 68);
+            label3.Location = new Point(170, 67);
             label3.Name = "label3";
             label3.Size = new Size(66, 15);
             label3.TabIndex = 5;
@@ -120,7 +121,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(182, 23);
+            label2.Location = new Point(188, 23);
             label2.Name = "label2";
             label2.Size = new Size(48, 15);
             label2.TabIndex = 3;
@@ -142,14 +143,14 @@
             comboBoxType.FormattingEnabled = true;
             comboBoxType.Location = new Point(48, 64);
             comboBoxType.Name = "comboBoxType";
-            comboBoxType.Size = new Size(100, 23);
+            comboBoxType.Size = new Size(113, 23);
             comboBoxType.TabIndex = 2;
             comboBoxType.SelectedIndexChanged += comboBoxType_SelectedIndexChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(0, 68);
+            label1.Location = new Point(7, 67);
             label1.Name = "label1";
             label1.Size = new Size(30, 15);
             label1.TabIndex = 1;
@@ -218,6 +219,7 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(comboBoxMonth);
             groupBox2.Controls.Add(label10);
@@ -240,38 +242,46 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(0, 60);
+            label13.Location = new Point(509, 97);
             label13.Name = "label13";
-            label13.Size = new Size(96, 15);
+            label13.Size = new Size(0, 15);
             label13.TabIndex = 13;
-            label13.Text = "Текущий месяц:";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(0, 97);
+            label14.Name = "label14";
+            label14.Size = new Size(54, 15);
+            label14.TabIndex = 14;
+            label14.Text = "Остаток:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(0, 30);
+            label8.Location = new Point(488, 97);
             label8.Name = "label8";
-            label8.Size = new Size(90, 15);
+            label8.Size = new Size(0, 15);
             label8.TabIndex = 12;
-            label8.Text = "За все месяцы:";
             // 
             // comboBoxMonth
             // 
             comboBoxMonth.FormattingEnabled = true;
-            comboBoxMonth.Location = new Point(52, 85);
+            comboBoxMonth.Location = new Point(48, 27);
             comboBoxMonth.Name = "comboBoxMonth";
-            comboBoxMonth.Size = new Size(150, 23);
+            comboBoxMonth.Size = new Size(91, 23);
             comboBoxMonth.TabIndex = 11;
             comboBoxMonth.SelectedIndexChanged += comboBoxMonth_SelectedIndexChanged;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(0, 88);
+            label10.Location = new Point(0, 30);
             label10.Name = "label10";
             label10.Size = new Size(46, 15);
             label10.TabIndex = 10;
             label10.Text = "Месяц:";
+            label10.Click += label10_Click;
             // 
             // label9
             // 
@@ -335,7 +345,7 @@
             // 
             lblBalanceThisMonth.AutoSize = true;
             lblBalanceThisMonth.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBalanceThisMonth.Location = new Point(87, 30);
+            lblBalanceThisMonth.Location = new Point(60, 97);
             lblBalanceThisMonth.Name = "lblBalanceThisMonth";
             lblBalanceThisMonth.Size = new Size(24, 15);
             lblBalanceThisMonth.TabIndex = 2;
@@ -465,5 +475,6 @@
         private Label label8;
         private Label label12;
         private Label label13;
+        private Label label14;
     }
 }

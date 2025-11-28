@@ -790,9 +790,14 @@ namespace PersonalFinanceTracker
         {
 
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
-    
+
     public class FinancialOperation
     {
         public int Id { get; set; }
